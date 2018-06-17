@@ -1,5 +1,5 @@
 ## ILM 360 View
-Click here to see the [DEMO](http://demo.ilmtech.in/jquery/ilm360view/)
+Click here to see the [DEMO](https://ilmtech.github.io/ilm360view/)
 
 A free 360 product view with hotpot help developer to their personal use. Features Include
 
