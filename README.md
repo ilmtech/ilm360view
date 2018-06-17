@@ -1,5 +1,5 @@
 ## ILM 360 View
-
+Click here to see the [DEMO](http://demo.ilmtech.in/jquery/ilm360view/)
 A free 360 product view with hotpot help developer to their personal use. Features Include
 
 1. Auto animation
@@ -23,7 +23,7 @@ Use below syntax to config 360 view
 ```markdown
 <script>
     $("div.container").ilmSpin({
-        src: "images/images_{frame}",
+        src: "images/images_{frame}.jpg",
         width: "600px",
         height: "400px",
         speed: 100,
