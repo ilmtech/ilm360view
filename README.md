@@ -1,37 +1,59 @@
-## Welcome to GitHub Pages
+## ILM 360 View
 
-You can use the [editor on GitHub](https://github.com/ilmtech/ilm360view/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+A free 360 product view with hotpot help developer to their personal use. Features Include
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+1. Auto animation
+2. Controls with Play, Pause, Previous & Next
+3. Mouse Rotate control
+4. Hotspot
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+How to install
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+<script src="jquery-3.3.1.min.js"></script>
+<script src="script.js"></script>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+Create a div to display the Image
+```markdown
+<div class="container"></div>
+```
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ilmtech/ilm360view/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Use below syntax to config 360 view
+```markdown
+<script>
+    $("div.container").ilmSpin({
+        src: "images/images_{frame}",
+        width: "600px",
+        height: "400px",
+        speed: 100,
+        frames: 35,
+        play: "play",
+        pause: "pause",
+        previous: "previous",
+        next: "next",
+        reverse: true,
+        icons: [{id: 1, path: 'images/plus.png', html: '<h1>This is Sample text</h1>'}],
+        iconsPosition: [
+            {imageid: 1, frame: 1, top: 58, left: 23.5, display: true}, 
+            {imageid: 1, frame: 2, top: 57, left: 25, display: true},
+            {imageid: 1, frame: 3, top: 56, left: 27, display: true},
+            {imageid: 1, frame: 4, top: 56, left: 28.2, display: true},
+            {imageid: 1, frame: 5, top: 56, left: 30, display: true},
+            {imageid: 1, frame: 6, top: 55, left: 34, display: true},
+            {imageid: 1, frame: 28, top: 64, left: 41, display: true},
+            {imageid: 1, frame: 29, top: 64, left: 36, display: true},
+            {imageid: 1, frame: 30, top: 64, left: 32, display: true},
+            {imageid: 1, frame: 31, top: 63, left: 29, display: true},
+            {imageid: 1, frame: 32, top: 62, left: 26, display: true},
+            {imageid: 1, frame: 33, top: 61, left: 24, display: true},
+            {imageid: 1, frame: 34, top: 60, left: 23, display: true},
+            {imageid: 1, frame: 35, top: 59, left: 22.5, display: true}            
+        ]
+    });
+</script>
+```
 
 ### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+If you need any help you can contact at support@ilmtech.in
